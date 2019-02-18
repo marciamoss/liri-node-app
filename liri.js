@@ -15,19 +15,20 @@ var moment = require('moment');
 
 var functionsINeed = require("./smallFunctions.js");
 
+
 //concert-this 
 if(process.argv[2]=="concert-this"){
-    functionsINeed.concertthis(process.argv,functionsINeed,axios,moment);
+    functionsINeed.concertthis(process.argv,functionsINeed,axios,moment,fs);
 }
 
 //spotify-this
 else if(process.argv[2]=="spotify-this"){
-    functionsINeed.spotifythis(process.argv,functionsINeed,spotify);
+    functionsINeed.spotifythis(process.argv,functionsINeed,spotify,fs);
 }
 
 //movie this
 else if(process.argv[2]=="movie-this"){
-    functionsINeed.moviethis(process.argv,functionsINeed,axios);
+    functionsINeed.moviethis(process.argv,functionsINeed,axios,fs);
 }
 
 //do-what-it-says
@@ -41,7 +42,7 @@ else if(process.argv[2]=="do-what-it-says"){
                 song.push("b");
                 song.push("c");
                 song.push(task[(i+1)].split(" "));
-                functionsINeed.spotifythis(song,functionsINeed,spotify);
+                functionsINeed.spotifythis(song,functionsINeed,spotify,fs);
             }
 
             if(task[i]=="concert-this-band"){
@@ -50,7 +51,7 @@ else if(process.argv[2]=="do-what-it-says"){
                 band.push("b");
                 band.push("c");
                 band.push(task[(i+1)].split(" ").join("+"));
-                functionsINeed.concertthis(band,functionsINeed,axios,moment);
+                functionsINeed.concertthis(band,functionsINeed,axios,moment,fs);
             }
             if(task[i]=="movie-this"){
                 var movie=[];
@@ -58,8 +59,9 @@ else if(process.argv[2]=="do-what-it-says"){
                 movie.push("b");
                 movie.push("c");
                 movie.push(task[(i+1)].split(" ").join("+"));
-                functionsINeed.moviethis(movie,functionsINeed,axios);
+                functionsINeed.moviethis(movie,functionsINeed,axios,fs);
             }
         }
     })
 }
+
