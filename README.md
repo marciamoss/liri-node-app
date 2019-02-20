@@ -7,7 +7,7 @@
   That will install all the packages required to run the app.
 
 * To search the spotify do the following:
- Type command - node liri.js spotify-this song name.
+ In gitbash window type command - **node liri.js spotify-this song name**
  For eg: i want to search for a song called whatever it takes by imagine dragons. 
  So i type, node liri.js spotify-this whatever it takes. 
  This command would show all the songs with the same title by various artists. Currently it is limited to 5. 
@@ -15,17 +15,17 @@
  If you do not give any song name it defaults to "The Sign" by "Ace of Base".
 
 * To search for concerts do the following:
-Type command - node liri.js concert-this band name
+In gitbash window type command - **node liri.js concert-this band name**
 For eg: i want to serch for the band imagine dragons.
-So i type, node liri.js concert-this imagine dragons
+So i type, **node liri.js concert-this imagine dragons**
 This command would show all the upcoming performances with Date, venue and location information.
 If a band name has ' in it make sure to add \ before the quotes like this \'
 If you do not give any band name it defaults to "Ace of Base".
 
 * To search for movies do the following:
-Type command - node liri.js movie-this movie name
+In gitbash window type command - **node liri.js movie-this movie name**
 For eg: i want to search for the movie twilight.
-So i type, node liri.js movie-this twilight 
+So i type, **node liri.js movie-this twilight** 
 This command would show me:
     * Title of the movie.
     * Year the movie came out.
