@@ -39,7 +39,7 @@ If a movie name has ' in it make sure to add \ before the quotes like this \'
 If you do not give any band name it defaults to "Mr. Nobody".
 
 * There is one other command that app can search. It is called do-what-it-says.
-    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+    * Using the `fs` Node package, LIRI will take the text inside of random.txt and then uses it to call one of LIRI's commands.
     * Currently random.txt has "spotify-this-song,"I Want it That Way",concert-this-band,imagine dragons,movie-this,guardians of the galaxy"
     * So when you type command - node liri.js do-what-it-says the app goes through the same action for spotify-this, concert-this and movie-this for the input right after those commands in the text file.
     * You can add more commands to the text file with , but make sure it follows the same format as it is currently in the text file.
