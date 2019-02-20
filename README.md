@@ -6,7 +6,7 @@
 * Once you have the github repo cloned to your computer in git bash run command 'npm i' without the quotes. 
   That will install all the packages required to run the app.
   
-* Next, create a file named .env, add the following to it, replacing the values with your API keys (no quotes) once you     have them:
+* Next, create a file named **.env**, add the following to it, replacing the values with your API keys (no quotes) once     you have them:
 # Spotify API keys
 
 SPOTIFY_ID=your-spotify-id
@@ -18,6 +18,9 @@ Step Two: Either login to your existing Spotify account or create a new one (a f
 Step Three: Once logged in, navigate to https://developer.spotify.com/my-applications/#!/applications/create to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
 Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the node-spotify-api package.
 
+**Video link for app**:
+https://drive.google.com/open?id=11q3r_v-y4sV5RPgg_-O7Hr5XWwjFpi9q
+
 
 * To search the spotify do the following:
  In gitbash window type command - **node liri.js spotify-this song name** (**Note: If a song name has ' in it make sure to add \ before the quotes like this \'**)
@@ -26,6 +29,9 @@ Step Four: On the next screen, scroll down to where you see your client id and c
  This command would show all the songs with the same title by various artists. Currently it is limited to 5. 
  
  If you do not give any song name it defaults to "The Sign" by "Ace of Base".
+
+**Video link for app**:
+https://drive.google.com/open?id=1rHIaMe89TpXym55S9p5Chl4RLViwnrCJ
 
 * To search for concerts do the following:
 In gitbash window type command - **node liri.js concert-this band name**  (**Note: If a song name has ' in it make sure to add \ before the quotes like this \'**)
@@ -49,13 +55,19 @@ This command would show me:
     * Actors in the movie.
 If you do not give any band name it defaults to "Mr. Nobody".
 
+**Video link for app**:
+https://drive.google.com/open?id=1V3-Hd6P2ec07JZsdFOdGMIuJ4gO0PW-a
+
+
 * There is one other command that app can search. It is called **do-what-it-says**
     * Using the `fs` Node package, LIRI will take the text inside of random.txt and then uses it to call one of LIRI's commands.
     * Currently random.txt has "spotify-this-song,"I Want it That Way",concert-this-band,imagine dragons,movie-this,guardians of the galaxy"
     * So when you type command - node liri.js do-what-it-says the app goes through the same action for spotify-this, concert-this and movie-this for the input right after those commands in the text file.
     * You can add more commands to the text file with , but make sure it follows the same format as it is currently in the text file.
 
- 
+**Video link for app:**
+https://drive.google.com/open?id=1PZvdZQTEhQX7W5jzJA9cy5m91mzADgjz
+
 
 
 
